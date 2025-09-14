@@ -81,7 +81,7 @@ st.write(X_input)
 
 if user_project_selection == 'Play Tennis':
     X_input_enc = pd.get_dummies(X_input)
-    model_features = tennis_model.feature_names_in_ # features seen during training
+    model_features = tennis_model.feature_names_in_ 
     final_X = X_input_enc.reindex(columns=model_features, fill_value=0)
 else:
     final_X = X_input
@@ -156,6 +156,11 @@ elif user_project_selection == 'Cancer':
          st.success(f'{ans_name} {class_name}')
      elif final_predicted_value == 1:
         st.warning(f'{ans_name} {class_name}')
+elif user_project_selection == 'Iris':
+    if final_predicted_value == 0:
+        st.warning(f'{ans_name} {target[final_predicted_value]}')
+    else:
+        st.success(f'{ans_name} {target[final_predicted_value]}')
 else:
     st.success(f'{ans_name} {target[final_predicted_value]}')
 
