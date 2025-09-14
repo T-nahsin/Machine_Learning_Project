@@ -156,11 +156,11 @@ elif user_project_selection == 'Cancer':
          st.success(f'{ans_name} {class_name}')
      elif final_predicted_value == 1:
         st.warning(f'{ans_name} {class_name}')
-elif user_project_selection == 'Iris':
+elif user_project_selection == 'Play Tennis':
     if final_predicted_value == 0:
-        st.warning(f'{ans_name} {target[final_predicted_value]}')
+        st.warning(f'{ans_name} {class_name}')
     else:
-        st.success(f'{ans_name} {target[final_predicted_value]}')
+        st.success(f'{ans_name} {class_name}')
 else:
     st.success(f'{ans_name} {target[final_predicted_value]}')
 
