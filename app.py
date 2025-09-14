@@ -7,7 +7,7 @@ import pickle
 import matplotlib.pyplot as plt
 
 
-st.title('Hybrid Machine learning Project by Nishant')
+st.title('Hybrid ML Project by Nishant')
 st.header('Select Dataset to predict value!!')
 st.subheader('Project Summary:')
 
