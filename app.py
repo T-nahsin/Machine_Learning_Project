@@ -7,6 +7,21 @@ import pickle
 import matplotlib.pyplot as plt
 
 
+page_bg = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background-color: #E6E6FA;  /* Light Violet (Lavender) */
+    color: black;
+}
+[data-testid="stSidebar"] {
+    background-color: #D8BFD8;  /* Thistle shade */
+}
+</style>
+"""
+
+st.markdown(page_bg, unsafe_allow_html=True)
+
+
 st.title('Hybrid ML Project by Nishant')
 st.header('Select Dataset to predict value!!')
 st.subheader('Project Summary:')
@@ -148,7 +163,9 @@ elif user_project_selection == 'Play Tennis':
 
 
 with st.spinner('Model analysing your data...'):
- time.sleep(3)
+ time.sleep(2)
+with st.spinner('Predicting the answer...'):
+ time.sleep(2)
 if user_project_selection == 'Wine':
     st.success(f'{ans_name} {class_name}')
 elif user_project_selection == 'Cancer':
