@@ -160,24 +160,4 @@ else:
     st.success(f'{ans_name} {target[final_predicted_value]}')
 
 
-
-# if user_project_selection == 'Iris':
-#     iris_arr = plt.imread('iris_flowers.png')
-#     image_arr = iris_arr.copy()
-#     setosa_arr = image_arr[:,0:360,:]
-#     versi_arr = image_arr[:,360:700,:]
-#     vergi_arr = image_arr[:,700:,:]
-#     plt.imshow(setosa_arr)
-#     plt.axis('off')
-#     plt.savefig('setosa.jpeg')
-    
-#     plt.imshow(versi_arr)
-#     plt.axis('off')
-#     plt.savefig('versicolor.jpeg')
-    
-#     plt.imshow(vergi_arr)
-#     plt.axis('off')
-#     plt.savefig('virginica.jpeg')
-    
-#     st.image(f'{target[final_predicted_value]}.jpeg')
-
+st.markdown("Designed by **Nishant Singh**")
