@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 
-st.title('Hybrid ML Project')
+st.title('Hybrid ML Project by Nishant')
 st.header('Select Dataset to predict value!!')
 st.subheader('Project Summary:')
 
@@ -168,4 +168,4 @@ else:
     st.success(f'{ans_name} {target[final_predicted_value]}')
 
 
-st.markdown("Designed by **Nishant Singh & Abhay Verma**")
+st.markdown("Designed by **Nishant Singh**")
